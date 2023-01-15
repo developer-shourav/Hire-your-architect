@@ -29,7 +29,7 @@ body{
     --orange-color:#ff900e;
     --border-color:#e7891ccc;
     --header-bg:#ff900e1a;
-    --footer-bg:#FFF4E7;
+    --footer-bg:#fae1c3ad;
 }
 
 .container{
@@ -237,7 +237,7 @@ nav{
     font-weight: normal;
 }
 /* ****************************************************************
-           __________FACTS SECTION QUIRES__________
+           __________FACTS SECTION STYLES__________
 ****************************************************************** */
 .facts-section > h2{
     font-size: 2.2rem;
@@ -280,6 +280,50 @@ nav{
     box-shadow: 1px 1px 10px 1px #ff8c0867, -1px -1px 10px 1px #ff8c085b ;
     transform: scale(1.2);
     
+}
+/* ****************************************************************
+         __________SPONSORS SECTION STYLE__________
+****************************************************************** */
+.sponsor-section{
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.sponsor-section > h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+
+.sponsor-section > p{
+    margin: 1rem 0 3rem;
+    line-height: 1.2rem;
+    color: var(--color-tertiary);
+}
+.sponsor-img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sponsor-img{
+    width: 15%;
+}
+.sponsor-img > img{
+    width: 80%;
+    filter: grayscale(1);
+}
+
+/* ****************************************************************
+                __________FOOTER STYLES__________
+****************************************************************** */
+footer{
+    width: 80%;
+    margin: 0 auto 3rem;
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: var(--footer-bg);
+    border-radius: 10px;
 }
 /* ****************************************************************
                 __________MEDIA QUIRES__________
@@ -380,8 +424,8 @@ nav{
         padding-left: 1rem;
     }
     .experience-icon{
-        top: -40px;
-        left: 85px;
+        top: 10px;
+        left: 0;
         font-size: 1.25rem;
         padding: 1rem;
 
@@ -408,6 +452,39 @@ nav{
         transform: scale(1.1);
         
     }
+/* =====Sponsor Section Styles====  */
+    .sponsor-section{
+    margin: 3rem auto;
+}
+
+.sponsor-section > h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+
+.sponsor-section > p{
+    margin: 1rem 0 3rem;
+    padding: 0 .5rem;
+}
+.sponsor-img-wrapper{
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.sponsor-img{
+    width: 90%;
+}
+.sponsor-img > img{
+    width: 50%;
+}
+/* =====Footer Section Styles====  */
+footer{
+    width: 90%;
+    margin: 0 auto .5rem;
+    padding: 1rem 0;
+    border-radius: 10px;
+}
 }
 
 /* ==============For Medium Devices============  */
@@ -494,6 +571,23 @@ nav{
     .facts-item:hover{
         transform: scale(1.1);
         
+    }
+
+    /* =====Sponsor Section Styles====  */
+    .sponsor-section{
+    margin: 3rem auto;
+    }
+    .sponsor-img-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .sponsor-img{
+        width: 20%;
+    }
+    .sponsor-img > img{
+        width: 65%;
     }
 
 }
