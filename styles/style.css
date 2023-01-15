@@ -318,6 +318,28 @@ nav{
 }
 
 /* ****************************************************************
+                __________LOCATION STYLES__________
+****************************************************************** */
+.location-section{
+    text-align: center;
+    margin: 0 auto;
+}
+.location-section > h2{
+    margin: 3rem 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+}
+.locaton-map{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.locaton-map > iframe{
+    border-radius: 10px;
+    border: 4px solid var(--orange-color);
+}
+/* ****************************************************************
                 __________FOOTER STYLES__________
 ****************************************************************** */
 footer{
@@ -481,6 +503,19 @@ footer{
 }
 .sponsor-img > img{
     width: 50%;
+}
+/* =====Map Section Styles====  */
+.location-section > h2{
+    margin: 2rem 0;
+}
+.locaton-map{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+.locaton-map > iframe{
+    border: 2px solid var(--orange-color);
+    height: 200px;
 }
 /* =====Footer Section Styles====  */
 footer{
