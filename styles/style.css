@@ -2,30 +2,154 @@
                 __________COMMON STYLES__________
 ****************************************************************** */
 
+/* =============Imported Font=============  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* ============= CSS Variables=============  */
+:root{
+    --color-primary:#131313;
+    --color-secondary:#424242;
+    --color-tertiary:#727272;
+    --btn-bg:#ff900e;
+    --border-color:#ff8c08;
+    --header-bg:#ff900e1a;
+    --footer-bg:#FFF4E7;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+a{
+    color: var(--color-secondary);
+}
 
 
+/* ****************************************************************
+             __________HEADER STYLES__________
+****************************************************************** */
+header{
+    background-color: var(--header-bg);
+}
+.header__wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+/* =============Nav Bar Styles=============  */
+nav{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   padding: 1.5rem 0;
+}
+.nav-logo{
+    width: 60%;
+}
+.nav-logo > h2{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.nav-link{
+    width: 40%;
+}
+.nav-link > ul{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.nav-link > ul > li > a{
+    background: transparent;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--color-secondary);
+    transition: all .3s ease;
+}
 
-
-
-
-
-
-
-
+.nav-link > ul > li > a:hover{
+    background: var(--btn-bg);
+    color: #fff;
+}
 
 /* ****************************************************************
                 __________MEDIA QUIRES__________
 ****************************************************************** */
 
-/* ================For Small Devices=================  */
 
-@media only screen {
-    
+/* =============For Small Devices=============  */
+
+@media only screen and (max-width:576px){
+    nav{
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+     }
+     .nav-logo{
+        width: 100%;
+    }
+    .nav-logo > h2{
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 20px;
+    }
+        .nav-link{
+        width: 100%;
+    }
+    .nav-link > ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+
 }
 
+/* ==============For Medium Devices============  */
 
+@media only screen and (min-width:577px) and (max-width:992px){
+    .header__wrapper{
+        width: 90%;
+        
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 0;
+     }
+     .nav-logo{
+         width: 50%;
+     }
 
-
-
-/* ================For Medium Devices=================  */
+     .nav-link{
+         width: 50%;
+     }
+     .nav-link > ul > li > a{
+        padding: 5px 8px;
+    }
+    
+    
+}
