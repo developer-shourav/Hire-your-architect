@@ -179,7 +179,6 @@ nav{
 .feature-section{
     display: flex;
     flex-wrap: wrap;
-   /*  align-items: flex-start; */
     justify-content: space-between;
 }
 .feature-info{
@@ -239,7 +238,6 @@ nav{
 /* ****************************************************************
                 __________MEDIA QUIRES__________
 ****************************************************************** */
-
 
 /* =============For Small Devices=============  */
 
@@ -316,9 +314,31 @@ nav{
         width: 100%;
     }
 
-
     .explore-info > h2{
         font-size: 1.6rem;
+    }
+
+    /* =====Feature Section Styles====  */
+    .feature-section{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .feature-info{
+        width: 100%;
+    }
+    .feature_img{
+        width: 100%;
+    }
+    .feature-list{
+        padding-left: 1rem;
+    }
+    .experience-icon{
+        top: -40px;
+        left: 85px;
+        font-size: 1.25rem;
+        padding: 1rem;
+
     }
 }
 
@@ -367,6 +387,29 @@ nav{
     width: 100%;
     
    }
+    /* =====Feature Section Styles====  */
+    .feature-section{
+        flex-wrap: wrap;   
+    }
+    .feature-info{
+        width: 100%;
+    }
+    .feature_img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .feature-list{
+        padding-left: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .experience-icon{
+        top: -60px;
+        left: 100px;
+        font-size: 1.5rem;
+        padding: 2rem 7rem;
+
+    }
 
 }
     
