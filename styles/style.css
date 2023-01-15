@@ -26,7 +26,7 @@ body{
     --color-primary:#131313;
     --color-secondary:#424242;
     --color-tertiary:#727272;
-    --btn-bg:#ff900e;
+    --orange-color:#ff900e;
     --border-color:#ff8c08;
     --header-bg:#ff900e1a;
     --footer-bg:#FFF4E7;
@@ -44,7 +44,7 @@ a{
 
 .btn-primary{
     border: none;
-    background-color: var(--btn-bg);
+    background-color: var(--orange-color);
     color: #fff;
     padding: 15px 20px;
     font-weight: bold;
@@ -55,7 +55,7 @@ a{
 }
 .btn-primary:hover{
     background-color:rgba(255, 255, 255, 0.671);
-    color: var(--btn-bg);
+    color: var(--orange-color);
     border: 2px solid var(--border-color);
 }
 /* ****************************************************************
@@ -101,7 +101,7 @@ nav{
 }
 
 .nav-link > ul > li > a:hover{
-    background: var(--btn-bg);
+    background: var(--orange-color);
     color: #fff;
 }
 
@@ -172,7 +172,70 @@ nav{
     color: var(--color-tertiary);
 }
 
+/* ****************************************************************
+         __________FEATURE SECTION STYLES__________
+****************************************************************** */
 
+.feature-section{
+    display: flex;
+    flex-wrap: wrap;
+   /*  align-items: flex-start; */
+    justify-content: space-between;
+}
+.feature-info{
+    width: 45%;
+}
+.feature-info > h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    border-left: 4px solid var(--border-color);
+    padding-left: 10px;
+    margin-top: 2rem;
+}
+.feature-info > p{
+    margin: 1rem 0;
+    line-height: 1.4rem;
+    color: var(--color-tertiary);
+}
+.feature-list{
+    padding-left: 1.5rem;
+}
+
+.feature-list > article{
+    margin: 2rem 0;
+}
+.feature-list > article > h3{
+   color: var(--color-primary);
+}
+.feature-list > article > p{
+    color: var(--color-tertiary);
+    margin-top: 10px;
+}
+.feature_img{
+    width: 45%;
+}
+.feature_img > img{
+    width: 100%;
+}
+
+.experience-icon{
+    background-color: var(--orange-color);
+    position: relative;
+    top: -85px;
+    left: -95px;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+.experience-icon > p{
+    font-size: 1rem;
+    font-weight: normal;
+}
 /* ****************************************************************
                 __________MEDIA QUIRES__________
 ****************************************************************** */
