@@ -127,6 +127,16 @@ nav{
 /* =============For Small Devices=============  */
 
 @media only screen and (max-width:576px){
+
+    .container{
+        width: 90%;
+        padding: 2rem 0 1rem;
+    }
+    .header__wrapper{
+    width: 100%;
+    
+
+}
     nav{
         flex-direction: column;
         padding: 0;
@@ -151,6 +161,20 @@ nav{
         gap: 20px;
     }
 
+    /* =============Hero Section Styles=============  */
+
+    .web-header{
+        font-size:1.05rem;
+        line-height: 1.8rem;
+    }
+    .web-intro-text{
+        padding: 1rem 0;
+        line-height: 1.3rem;
+        text-align: justify;
+    }
+    .top-banner{
+        width: 90%;
+    }
 
 }
 
@@ -180,5 +204,20 @@ nav{
         padding: 5px 8px;
     }
     
-    
+    /* =============Hero Section Styles=============  */
+
+    .web-header{
+        font-size:1.05rem;
+        line-height: 1.8rem;
+    }
+    .web-intro-text{
+        padding: 1rem 0;
+        line-height: 1.3rem;
+    }
+    .top-banner{
+        width: 90%;
+    }
+
 }
+    
+
