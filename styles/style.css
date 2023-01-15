@@ -167,7 +167,7 @@ nav{
     color: #ff8c08;
 }
 .explore-info > p{
-    margin: 1rem 0;
+    margin: .1rem 0;
     line-height: 1.4rem;
     color: var(--color-tertiary);
 }
@@ -280,6 +280,10 @@ nav{
     box-shadow: 1px 1px 10px 1px #ff8c0867, -1px -1px 10px 1px #ff8c085b ;
     transform: scale(1.2);
     
+}
+.facts-item:hover > img{
+    filter: drop-shadow(4px 4px 1px #272727b9);
+    transform: scale(1.15);
 }
 /* ****************************************************************
          __________SPONSORS SECTION STYLE__________
@@ -424,8 +428,8 @@ footer{
         padding-left: 1rem;
     }
     .experience-icon{
-        top: 10px;
-        left: 0;
+        top: -45px;
+        left: 25%;
         font-size: 1.25rem;
         padding: 1rem;
 
@@ -550,7 +554,7 @@ footer{
     }
     .experience-icon{
         top: -60px;
-        left: 100px;
+        left: 25%;
         font-size: 1.5rem;
         padding: 2rem 7rem;
 
