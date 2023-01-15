@@ -215,7 +215,7 @@ nav{
         gap: 20px;
     }
 
-    /* =============Hero Section Styles=============  */
+    /* =====Hero Section Styles====  */
 
     .web-header{
         font-size:1.05rem;
@@ -230,6 +230,33 @@ nav{
         width: 90%;
     }
 
+    /* =====Explore Section Styles====  */
+    .explore__section{
+    width: 100%;
+    flex-direction: column;
+    flex: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+   }
+
+    .team_img_wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .team_image > img{
+        width: 100%;
+    }
+    .explore-info{
+        width: 100%;
+    }
+
+
+    .explore-info > h2{
+        font-size: 1.6rem;
+    }
 }
 
 /* ==============For Medium Devices============  */
@@ -271,6 +298,12 @@ nav{
     .top-banner{
         width: 90%;
     }
+
+     /* =====Explore Section Styles====  */
+    .explore__section{
+    width: 100%;
+    
+   }
 
 }
     
