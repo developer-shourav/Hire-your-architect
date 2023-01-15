@@ -35,14 +35,22 @@ body{
 .container{
     width: 80%;
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 a{
     color: var(--color-secondary);
 }
 
-
+.btn-primary{
+    border: none;
+    background-color: var(--btn-bg);
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    border-radius: 5px;
+}
 /* ****************************************************************
              __________HEADER STYLES__________
 ****************************************************************** */
@@ -60,7 +68,7 @@ nav{
    justify-content: space-between;
    align-items: center;
    width: 100%;
-   padding: 1.5rem 0;
+   padding: 1.9rem 0;
 }
 .nav-logo{
     width: 60%;
@@ -90,6 +98,27 @@ nav{
     color: #fff;
 }
 
+/* =============Hero Section Styles=============  */
+.hero_area_wrapper{
+    text-align: center;
+}
+.web-header{
+    font-size: 2rem;
+    line-height: 60px;
+}
+.web-intro-text{
+    padding: 1rem 3rem 1.5rem;
+    line-height: 1.4rem;
+    color: var(--color-tertiary);
+}
+.top-banner{
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.top-banner > img{
+    width: 100%;
+}
 /* ****************************************************************
                 __________MEDIA QUIRES__________
 ****************************************************************** */
